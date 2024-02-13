@@ -9,7 +9,7 @@ d_year=$(date -j -f "%Y-%m-%d" $d_start +%Y)
 d_month=$(date -j -f "%Y-%m-%d" $d_start +%m)
 echo $d_year
 echo $d_month
-imessage-exporter -f html -o ~/imessage-export/$d_year/$d_month/$d_start -c compatible -s $d_start -e $d_end
+imessage-exporter -f html -o ~/imessage-history/$d_year/$d_month/$d_start -c compatible -s $d_start -e $d_end
 
 d_end=$d_start
 
